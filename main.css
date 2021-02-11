@@ -1,0 +1,120 @@
+
+:root {
+  --border-radius: 5px;
+  --border-width: 1px;
+  --light-grey: #e2e0e0;
+  --blue: #7f6cfc;
+  --orange: #ffc877;
+  --red: #c14444;
+  --white:	#FFFFFF;
+  --light-blue:#5EA3F1;
+}
+/* body is given the gradient */
+
+
+body {
+  background-color:var(--light-blue)
+  /* hover effect is added to buttons */
+}
+
+.button:hover {
+  background-color: var(--orange);
+}
+/* view container just height and width */
+#view-container {
+  width: 400px;
+  height: 100px;
+}
+/* view is are where pressed button data will be displayed */
+#view {
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--light-blue);
+  height: 90px;
+}
+/* main container it is the frame  */
+#main-container {
+  margin-left: 700px;
+  margin-top: 100px;
+  height: 640px;
+  width: 400px;
+  border: 1px solid black;
+  background-color:var(--white);;
+
+  padding: 50px;
+}
+.main-text{
+  display:flex;
+  flex-direction: column;
+  /* color:#c14444 */
+
+}
+/* inner text is for text of button like abc */
+.inner-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: grey;
+  display: flex;
+}
+/* these div contains all the buttons */
+#button-container {
+  
+    width: 100%;
+    height: 60%;
+    min-height: 300px;
+    /* border: var(--border-width) solid var(--light-grey); */
+    /* border-radius: var(--border-radius); */
+    background-color: var(--white);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* button class is defined so that all the buttons dont need specific css */
+.button {
+  width: 30%;
+  height: 20%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: var(--border-width) solid var(--light-grey); */
+  background-color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+/* call button and buttonackspace have specific css */
+#call {
+  height: 110px;
+  width: 110px;
+  font-size: 2rem;
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 10px;
+}
+#backspace {
+  width: 30%;
+  height: 20%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: var(--border-width) solid var(--light-grey); */
+  background-color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  /* transition-duration: 1s; */
+}
+.two-button{
+  width: 30%;
+  height: 20%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: var(--border-width) solid var(--light-grey); */
+  background-color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  /* transition-duration: 1s; */
+}
